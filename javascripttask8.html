@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    table{
+        border: none;
+    }
+</style>
+<body style="background: radial-gradient(circle at 5.3% 18.2%, rgb(255, 208, 253) 0%, rgb(255, 237, 216) 90%);">
+    <h1 style="color:blue;" align="center">Registration form</h1>
+    <form>
+    <table  style="border-collapse: collapse;" align="center">
+        <tr>
+            <th>First Name </th>
+            <td><input type="text" id="fname" size="100%" onkeyup="f1()">
+            <span id="msg1"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>Last Name </th>
+            <td><input type="text" id="lname" size="100%" onkeyup="f2()">
+                <span id="msg2"></span>
+
+            </td>
+        </tr>
+            <tr>
+                <th>Email </th>
+                <td><input type="text" id="email" size="100%" onkeyup="f3()">
+                    <span id="msg3"></span>
+
+                </td>
+
+            </tr>
+        <tr>
+            <th>Password </th>
+            <td><input type="password" id="pass" size="100%" onkeyup="f4()">
+                <span id="msg4"></span>
+
+            </td>
+        </tr>
+        <tr>
+            <th>Re-enter Password </th>
+            <td><input type="password" id="repass" size="100%" onkeyup="f5()">
+                <span id="msg5"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>Gender: </th>
+            <td>
+                <input type="radio" name="gender" size="60%">Male<br>
+                <input type="radio" name="gender" size="60%">Female
+            </td>
+        </tr>
+        <tr>
+            <th>Age: </th>
+            <td><input type="text" id="Age" size="100%" onkeyup="f6()">
+                <span id="msg6"></span>
+
+            </td>
+        </tr>
+        <tr>
+            <th>Phone Number </th>
+            <td><input type="text" id="phone" size="100%" onkeyup="f7()">
+                <span id="msg7"></span>
+
+            </td>
+        </tr>
+        <tr>
+            <th>Address </th>
+            <td><textarea id="address" rows="5" cols="93" onkeyup="f8()"></textarea>
+                <span id="msg8"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>State </th>
+            <td><input type="text" id="state" size="100%" onkeyup="f9()">
+                <span id="msg9"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>Country </th>
+            <td><select name="country">
+                <option value="Choose your country">Choose your country</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Japan">Japan</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>Languages known </th>
+            <td>
+                <input type="checkbox" name="english">English 
+                <input type="checkbox" name="kannada">kannada
+                <input type="checkbox" name="hindi">Hindi
+                <input type="checkbox" name="telugu">Telugu
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" name="check">Hereby I declare all the given details are true</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">Log in to <a href="https://ethnus.com/about/">Ethnus</a> website</td>
+        </tr>
+    </table><br>
+    <div align="center" ><button name="register" value="Register"style="color:white;background-color:red;border-radius:20px;">REGISTER</button></div>
+    </form>
+    <script src="task8.js">
+    </script>
+</body>
+</html>

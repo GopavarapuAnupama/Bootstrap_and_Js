@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .error {
+            border: 3px solid red;
+        }
+        .error-message {
+            color: red;
+            font-weight:500;
+        }
+    </style>
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="myForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error-message" id="name-error"></span>
+        </div><br />
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error-message" id="email-error"></span>
+        </div><br />
+        <div>
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website">
+            <span class="error-message" id="website-error"></span>
+        </div><br />
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <span class="error-message" id="message-error"></span>
+        </div><br />
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="task5.js">
+    </script>
+</body>
+</html>

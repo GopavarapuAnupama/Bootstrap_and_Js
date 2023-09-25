@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  animation: mymove 3s infinite;
+  animation-play-state: paused;
+}
+img {
+    width: 275px;
+    height: 200px;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 1200px;}
+}
+h2{
+    color:midnightblue;
+}
+</style>
+</head>
+<body>
+<div id="myDIV"><img src="train.png" /></div>
+<h2>Click the following buttons to handle animation</h2>
+<button onclick="myPlayFunction()">Start</button>
+<button onclick="myPauseFunction()">Stop</button>
+<script src="task7.js">
+</script>
+</body>
+</html>
